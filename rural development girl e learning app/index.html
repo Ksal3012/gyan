@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevSkill - eLearning Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slider-box-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slider-box {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+}
+
+.slider-box::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-container {
+  display: flex;
+  gap: 16px;
+  padding: 10px;
+}
+
+.image-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scroll-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  user-select: none;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px;
+      max-width: 1300px;
+      margin: 0 auto 60px;
+      background-color: #f4e9e9;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-section, .right-section {
+      flex: 1 1 300px;
+    }
+
+    .left-section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: mediumblue;
+      text-align: justify;
+    }
+
+    .left-section p {
+      font-size: 18px;
+      color: #333;
+      text-align: justify;
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right-section video {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .right-section video {
+        height: auto;
+      }
+    }
+
+  </style>
+</head>
+<body class="bg-gradient-to-b from-orange-50 to-white text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between p-6">
+    <div class="text-2xl font-bold text-orange-600">AdhyaySKILL</div>
+    <ul class="flex space-x-6 text-gray-700">
+      <li>Home</li>
+      <li>Courses</li>
+      <li>MicroEntrepreneurs</li>
+      <li>Mentors</li>
+      <li>Events</li>
+      <li>Forms</li>
+      <li>Rewards</li>
+    </ul>
+    <button class="bg-black text-white px-4 py-2 rounded-full">Join Us</button>
+  </nav>
+
+  <!-- Hero Section --><br><br>
+  <section class="flex flex-col lg:flex-row items-center justify-between px-8 py-12 pt-24">
+    <div class="max-w-xl">
+      <span class="text-orange-500 font-bold uppercase text-sm">e_Learning Platform</span>
+      <h1 class="text-4xl font-bold leading-tight mt-2">
+        Smart Learning<br>
+        Deeper & More<br>
+      </h1>
+      <p class="text-gray-600 mt-4">"Share smart ideas in a unique way, without needing a big company, by combining both online and offline strategies."</p>
+      <div class="flex space-x-4 mt-6">
+        <button class="bg-teal-500 text-white px-6 py-2 rounded-full">Start Learning</button>
+      </div>
+    </div>
+    <div class="mt-10 lg:mt-0">
+      <img src="women1.jpg" alt="Learner" class="w-[400px] rounded-xl shadow-lg" />
+    </div>
+  </section>
+
+  <!-- Stats Section --><br>
+  <section class="text-center py-12 bg-white">
+    <p class="text-xl mb-6 font-medium text-gray-700">"We love helping people learn by giving them easy, fun, and high-quality education from anywhere in the world."</p>
+    <br> <div class="flex justify-center space-x-12 text-lg font-semibold">
+      <div><span class="text-2xl text-orange-500">00</span><br/>Years of Learning</div>
+      <div><span class="text-2xl text-orange-500">00</span><br/>Students Enrolled</div>
+      <div><span class="text-2xl text-orange-500">00</span><br/>Experienced Teachers</div>
+    </div>
+  </section>
+
+  <!-- Course Section -->
+  <section class="px-8 py-12">
+    <div class="flex justify-between items-center">
+      <h2 class="text-2xl font-bold">Explore Our Course</h2>
+      <div class="flex space-x-2">
+        <input type="text" placeholder="Search Courses" class="border rounded-full px-4 py-2" />
+        <select class="border rounded-full px-4 py-2">
+          <option>All Categories</option>
+        </select>
+        <button class="bg-orange-500 text-white rounded-full px-4 py-2">🔍</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider-box-wrapper">
+    <button class="scroll-btn left" onclick="scrollSlider('left')">&#10094;</button>
+    
+    <div class="slider-box" id="mainSlider">
+      <div class="slider-container">
+        <div class="image-card"><img src="women6.jpg" alt="Slide 1"></div>
+        <div class="image-card"><img src="women2.jpg" alt="Slide 2"></div>
+        <div class="image-card"><img src="women3.jpg" alt="Slide 3"></div>
+        <div class="image-card"><img src="women4.jpg" alt="Slide 4"></div>
+        <div class="image-card"><img src="women5.jpg" alt="Slide 5"></div>
+        <div class="image-card"><img src="women6.jpg" alt="Slide 6"></div>
+        <div class="image-card"><img src="women2.jpg" alt="Slide 7"></div>
+        <div class="image-card"><img src="women3.jpg" alt="Slide 8"></div>
+        <div class="image-card"><img src="women4.jpg" alt="Slide 9"></div>
+      </div>
+    </div>
+  
+    <button class="scroll-btn right" onclick="scrollSlider('right')">&#10095;</button>
+  </section><br><br>
+  
+  <section class="container">
+    <div class="left-section">
+      <h1>About -</h1>
+      <p>
+        <b>🌾 Rural Girl Digital Empowerment Platform –</b> <br>
+        <p>
+        Bridging Dreams with Digital Power. 
+        Welcome to the Rural Girl Digital Empowerment Platform – a transformative initiative dedicated to empowering girls in rural areas through digital literacy, skill development, and access to opportunities.
+      </p><br>
+        
+       <p> Our platform is a beacon of hope, offering education, resources, mentorship, and tools that enable young rural girls to break barriers and build brighter futures.
+    </p><br>
+      <p>
+        We believe that every girl, no matter where she lives, deserves access to technology, education, and equal opportunities.
+            E-learning can significantly empower rural girls by providing access to education and skills development, leading to improved economic and social opportunities. </p><br>
+            <p> By leveraging technology, these girls can overcome geographical barriers and gain access to a wider range of learning materials and resources.
+         This can be particularly beneficial for girls who may face challenges attending traditional schools or who need to balance education with household responsibilities. </p><br> 
+      </p>
+    </div>
+    <div class="right-section">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Mo5Lmv8Jj2U?si=xH_ZvGcwr3Y68Nuv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <!-- Background Shapes -->
+      <div class="shape circle"></div>
+      <div class="shape square"></div>
+      <div class="shape triangle"></div>
+  
+      <!-- Left Side - Benefits -->
+      <div class="left-side">
+        <h2>Benefits of Digital Empowerment</h2>
+        <p><u>1. Empowers with Knowledge:</u> <br>Gain access to practical, easy-to-understand digital education that helps you stay informed, connected, and confident in the modern world.</p>
+        <p><u>2. Bridges the Digital Divide:</u><br> No matter where you live, the website brings digital tools, learning, and support directly to you — helping overcome barriers of distance, access, and resources.</p>
+        <p><u>3. Builds Skills for a Better Future:</u><br> From basic digital literacy to advanced skills like coding, design, and entrepreneurship — the platform helps you grow your abilities for jobs, business, and personal development.</p>
+        <p><u>4. Connects You to Mentors and Role Models:</u> <br>Get inspired and guided by successful women and professionals who share their journeys and offer support through mentorship and webinars.</p>
+        <p><u>5. Supports Your Dreams:</u><br> Whether you want to study further, start a business, get a job, or become a changemaker — the platform provides tools, information, and encouragement to help you succeed.</p>
+      </div>
+  
+      <!-- Right Side - Image -->
+      <div class="right-side">
+        <img src="Women1.png" class="pop-image" alt="Empowerment Image">
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+  const slider = document.getElementById("mainSlider");
+
+  function scrollSlider(direction) {
+    const scrollAmount = 260; // Match the image card width + gap
+    slider.scrollBy({
+      left: direction === "left" ? -scrollAmount : scrollAmount,
+      behavior: "smooth"
+    });
+  }
+
+  // Auto scroll every 3 seconds
+  setInterval(() => {
+    // If reached end, go back to start
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
+      slider.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      scrollSlider("right");
+    }
+  }, 3000);
+</script>
+
+</body>
+</html>
