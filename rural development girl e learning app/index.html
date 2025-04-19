@@ -5,130 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevSkill - eLearning Platform</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .slider-box-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.slider-box {
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  width: 100%;
-}
-
-.slider-box::-webkit-scrollbar {
-  display: none;
-}
-
-.slider-container {
-  display: flex;
-  gap: 16px;
-  padding: 10px;
-}
-
-.image-card {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 180px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.image-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.scroll-btn {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  user-select: none;
-}
-
-.scroll-btn.left {
-  left: 10px;
-}
-
-.scroll-btn.right {
-  right: 10px;
-}
-
-.scroll-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 40px;
-      max-width: 1300px;
-      margin: 0 auto 60px;
-      background-color: #f4e9e9;
-      border-radius: 20px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .left-section, .right-section {
-      flex: 1 1 300px;
-    }
-
-    .left-section h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: mediumblue;
-      text-align: justify;
-    }
-
-    .left-section p {
-      font-size: 18px;
-      color: #333;
-      text-align: justify;
-    }
-
-    .right-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .right-section video {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        padding: 20px;
-      }
-
-      .right-section video {
-        height: auto;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="stylee.css">
 </head>
 <body class="bg-gradient-to-b from-orange-50 to-white text-gray-900 font-sans">
 
@@ -136,16 +13,25 @@
   <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between p-6">
     <div class="text-2xl font-bold text-orange-600">AdhyaySKILL</div>
     <ul class="flex space-x-6 text-gray-700">
-      <li>Home</li>
-      <li>Courses</li>
-      <li>MicroEntrepreneurs</li>
-      <li>Mentors</li>
-      <li>Events</li>
-      <li>Forms</li>
-      <li>Rewards</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">SkillLearning</a></li>
+      <li><a href="#">MicroEntrepreneurs</a></li>
+      <li><a href="#">Mentors</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Forms</a></li>
+      <li><a href="#">Rewards</a></li>
     </ul>
-    <button class="bg-black text-white px-4 py-2 rounded-full">Join Us</button>
+    <div class="flex items-center space-x-4">
+      <!-- Language Toggle Capsule -->
+      <div class="flex rounded-full overflow-hidden border border-gray-300">
+        <button id="hindi-btn" class="bg-gray-200 text-gray-800 px-4 py-1 text-sm font-medium">Hindi</button>
+        <button id="english-btn" class="bg-white text-gray-800 px-4 py-1 text-sm font-medium">English</button>
+      </div>
+      <!-- Join Us Button -->
+      <button class="bg-black text-white px-4 py-2 rounded-full">Join Us</button>
+    </div>
   </nav>
+
 
   <!-- Hero Section --><br><br>
   <section class="flex flex-col lg:flex-row items-center justify-between px-8 py-12 pt-24">
@@ -193,7 +79,7 @@
     <button class="scroll-btn left" onclick="scrollSlider('left')">&#10094;</button>
     
     <div class="slider-box" id="mainSlider">
-      <div class="slider-container">
+      <div class="slider-container images">
         <div class="image-card"><img src="women6.jpg" alt="Slide 1"></div>
         <div class="image-card"><img src="women2.jpg" alt="Slide 2"></div>
         <div class="image-card"><img src="women3.jpg" alt="Slide 3"></div>
@@ -207,7 +93,7 @@
     </div>
   
     <button class="scroll-btn right" onclick="scrollSlider('right')">&#10095;</button>
-  </section><br><br>
+</section><br><br>
   
   <section class="container">
     <div class="left-section">
@@ -252,33 +138,126 @@
   
       <!-- Right Side - Image -->
       <div class="right-side">
-        <img src="Women1.png" class="pop-image" alt="Empowerment Image">
+        <img src="women7.jpeg" class="pop-image" alt="Empowerment Image">
       </div>
     </div>
   </section>
 
+  <section>
+    <div class="review-section">
+        <h2><b>What Our Users Say</h2>
+    
+        <div class="slider-container">
+          <div class="slider-wrapper" id="sliderWrapper">
+            <!-- Reviews -->
+            <div class="review-box">
+              <div class="review-header">
+                <img src="https://i.pravatar.cc/60?img=1" alt="Profile 1">
+                <div>
+                  <div class="review-name">Anjali Verma</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="review-text">This platform gave me confidence to learn digital skills from home. So easy to use!</div>
+            </div>
+    
+            <div class="review-box">
+              <div class="review-header">
+                <img src="https://i.pravatar.cc/60?img=2" alt="Profile 2">
+                <div>
+                  <div class="review-name">Rita Yadav</div>
+                  <div class="stars">★★★★☆</div>
+                </div>
+              </div>
+              <div class="review-text">Helpful content and friendly design. I even started an online business!</div>
+            </div>
+    
+            <div class="review-box">
+              <div class="review-header">
+                <img src="https://i.pravatar.cc/60?img=3" alt="Profile 3">
+                <div>
+                  <div class="review-name">Meena Sharma</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="review-text">Thanks to this site, I got a scholarship for further studies. Truly empowering!</div>
+            </div>
+    
+            <div class="review-box">
+              <div class="review-header">
+                <img src="https://i.pravatar.cc/60?img=4" alt="Profile 4">
+                <div>
+                  <div class="review-name">Suman Devi</div>
+                  <div class="stars">★★★★☆</div>
+                </div>
+              </div>
+              <div class="review-text">The community feature is great. I feel like I belong and can grow.</div>
+            </div>
+    
+            <div class="review-box">
+              <div class="review-header">
+                <img src="https://i.pravatar.cc/60?img=5" alt="Profile 5">
+                <div>
+                  <div class="review-name">Poonam Kumari</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="review-text">I never thought learning online could be this easy and useful. Highly recommended!</div>
+            </div>
+    
+            <div class="review-box">
+              <div class="review-header">
+                <img src="https://i.pravatar.cc/60?img=6" alt="Profile 6">
+                <div>
+                  <div class="review-name">Kavita Singh</div>
+                  <div class="stars">★★★★☆</div>
+                </div>
+              </div>
+              <div class="review-text">Good platform for rural girls like me. Loved the mentorship programs!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section><br>
 
-  <script>
-  const slider = document.getElementById("mainSlider");
+<footer class="footer">
+  <div class="footer-content">
 
-  function scrollSlider(direction) {
-    const scrollAmount = 260; // Match the image card width + gap
-    slider.scrollBy({
-      left: direction === "left" ? -scrollAmount : scrollAmount,
-      behavior: "smooth"
-    });
-  }
+    <!-- Left: Logo -->
+    <div class="footer-section">
+      <div class="footer-logo">🌸 Rural Girl Empowerment</div>
+    </div>
 
-  // Auto scroll every 3 seconds
-  setInterval(() => {
-    // If reached end, go back to start
-    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
-      slider.scrollTo({ left: 0, behavior: "smooth" });
-    } else {
-      scrollSlider("right");
-    }
-  }, 3000);
-</script>
+    <!-- Center: Contact Info -->
+    <div class="footer-section footer-center">
+      <p>📞 Contact: +91 9876543210</p>
+      <p>✉️ Email: info@ruralgirl.org</p>
+      <p>📍 Address: Village Tech Lane, Rural India</p>
+    </div>
 
+    <!-- Right: Social Media -->
+    <div class="footer-section footer-social">
+      <div class="footer-social-item">
+        <i class="fab fa-instagram" style="color:#E1306C;"></i>
+        <span>Instagram</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-facebook-f" style="color:#1877F2;"></i>
+        <span>Facebook</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-linkedin-in" style="color:#0077B5;"></i>
+        <span>LinkedIn</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+        <span>Twitter</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="home.js"></script>
 </body>
 </html>
