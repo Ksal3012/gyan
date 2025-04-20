@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e1f7d1;
+    padding: 30px;
+  }
+
+  /* Floating Heading Letters */
+  .floating-heading {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .floating-heading span {
+    display: inline-block;
+    color: #0077b6;
+    animation: floatLetter 3s ease-in-out infinite;
+  }
+
+  .floating-heading span:nth-child(odd) {
+    animation-delay: 0.2s;
+  }
+
+  .floating-heading span:nth-child(even) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes floatLetter {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Use Case Box */
+  .use-case-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .use-case-box {
+    background-color: #619c08;
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .use-case-box:hover {
+    transform: scale(1.03);
+  }
+  
+  .use-case-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .use-case-image img:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 20px rgba(248, 245, 245, 0.968);
+  }
+  
+  
+  .use-case-text h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  
+  .use-case-text .designation,
+  .use-case-text .company {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .use-case-text .story {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+    max-height: 220px; 
+    overflow-y: auto;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: justify;
+  }
+  
+
+  
+  .use-case-text .story::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .use-case-text .story::-webkit-scrollbar-thumb {
+    background: #ffffff55;
+    border-radius: 4px;
+  }        
+  
+  @media (max-width: 768px) {
+    .use-case-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+    .floating-heading {
+      font-size: 36px;
+    }
+
+    /* === Modern Unified Header === */
+.header {
+position: fixed;
+top: 0;
+width: 95%;
+background: #2A7B9B;
+background: #000003;
+background: linear-gradient(180deg,#619c08, rgb(184, 255, 163) 45%, #c0fb68 100%);
+padding: 20px 10px;
+border-radius: 0 0 15% 15%;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+z-index: 999;
+margin-right: 5%;
+}
+
+/* Top Row: Government Logo and Language */
+.header-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+flex-wrap: wrap;
+}
+
+.gov-logo {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.gov-logo img.flag {
+width: 40px;
+height: 40px;
+animation: floatLetter 3s ease-in-out infinite;
+}
+
+.gov-text {
+font-weight: bold;
+color: #0077b6;
+font-size: 18px;
+}
+
+.lang-buttons button {
+background-color: #4dabf7;
+color: white;
+border: none;
+padding: 6px 14px;
+border-radius: 6px;
+cursor: pointer;
+font-weight: 500;
+}
+
+.lang-buttons button:hover {
+background-color: #3395e1;
+}
+
+.hin{
+margin-right: 50px;
+}
+
+/* Bottom Row: Adhya Logo and Navigation */
+.header-bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 24px;
+font-weight: bold;
+color: #333;
+}
+
+.logo-icon {
+background-color: #12b600;
+color: white;
+width: 32px;
+height: 32px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 16px;
+}
+
+.nav-links {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+align-items: center;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #444;
+font-weight: 500;
+transition: color 0.3s;
+}
+
+.nav-links a:hover {
+color: #000;
+}
+
+/* Contact Tooltip */
+.contact-container {
+position: relative;
+cursor: pointer;
+margin-right: 50px;
+}
+
+.tooltip-box {
+display: none;
+position: absolute;
+top: 35px;
+right: 0;
+background-color: #fff;
+border: 1px solid #ccc;
+padding: 12px;
+border-radius: 6px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+width: 220px;
+z-index: 10;
+}
+
+.tooltip-box p {
+margin: 6px 0;
+font-size: 14px;
+}
+
+.contact-container:hover .tooltip-box {
+display: block;
+}
+
+/* Make space below header */
+body {
+padding-top: 180px;
+}
+
+@media (max-width: 768px) {
+.header-bottom,
+.header-top {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.nav-links {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+}

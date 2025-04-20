@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Women Empowerment Events</title>
+  <link rel="stylesheet" href="event.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-orange-50 to-white text-gray-900 font-sans">
+
+  <!-- Font Awesome for caret icons (add this in <head> if not already) -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+ 
+ <!-- Navbar -->
+ <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between p-6">
+   <div class="text-2xl font-bold text-orange-600">AdhyaySKILL</div>
+ 
+   <ul class="flex space-x-6 text-gray-700 items-center">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="entrypre.html">MicroEntrepreneurs</a></li>
+     <li><a href="mentor1.html">Mentors</a></li>
+     <li><a href="event.html">Events</a></li>
+     <li><a href="intership.html">Opportunities</a></li>
+ 
+     <!-- Rewards Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('rewardsDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>Rewards</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="rewardsDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+         <li><a href="reward.html" class="block px-4 py-2 hover:bg-gray-100">Our Rewards</a></li>
+         <li><a href="shemes.html" class="block px-4 py-2 hover:bg-gray-100">Government Scheme</a></li>
+       </ul>
+     </li>
+ 
+     <!-- SkillLearning Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('skillDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>SkillLearning</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="skillDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+         <li><a href="skills.html" class="block px-4 py-2 hover:bg-gray-100">Courses</a></li>
+         <li><a href="freeVideos.html" class="block px-4 py-2 hover:bg-gray-100">Free Videos</a></li>
+       </ul>
+     </li>
+ 
+     <!-- Analize Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('analizeDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>Analize</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="analizeDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-48 rounded">
+         <li><a href="form.html" class="block px-4 py-2 hover:bg-gray-100">Showcase Skills</a></li>
+         <li><a href="records.HTML" class="block px-4 py-2 hover:bg-gray-100">Records Display</a></li>
+       </ul>
+     </li>
+   </ul>
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({
+       pageLanguage: 'en',
+       includedLanguages: 'en,fr,de,es,zh,hi', // English added here
+       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+       autoDisplay: false
+     }, 'google_translate_element');
+   }
+ </script>
+ <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+   <div class="flex items-center space-x-4">
+ 
+     <!-- Google Translate Dropdown -->
+   <div id="google_translate_element"></div>
+ 
+     <!-- Language Toggle Capsule 
+     <div class="flex rounded-full overflow-hidden border border-gray-300">
+       <button id="hindi-btn" class="bg-gray-200 text-gray-800 px-4 py-1 text-sm font-medium">Hindi</button>
+       <button id="english-btn" class="bg-white text-gray-800 px-4 py-1 text-sm font-medium">English</button>
+     </div>
+      Join Us Button -->
+     <button class="bg-black text-white px-4 py-2 rounded-full"><a href="file:///D:/gyan/rural%20development%20girl%20e%20learning%20app/signup.html">Join Us</a></button>
+   </div>
+ </nav>
+ <br><br><br><br><br><br>
+<h1 style="size: 70 px;"><b>Women E-Learning Empowerment Events</b></h1>
+
+<!-- Offline Events -->
+<div class="section" id="offline">
+    <h2 style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <img class="logo" src="https://cdn1.iconfinder.com/data/icons/workshop-training-and-development/500/12-512.png" alt="Logo">
+  Offline Events</h2>
+  <div class="event-boxes">
+    <!-- 8 Offline Events -->
+    <div class="event">
+      <img class="logo" src="https://cdn1.iconfinder.com/data/icons/workshop-training-and-development/500/12-512.png" alt="Logo">
+      <p><strong>Digital Literacy Camp</strong></p>
+      <p><b>Date:</b> April 22, 2025</p>
+      <p><b>Time:</b> 9 AM - 3 PM</p>
+      <p><b>Location:</b> Rural School, Village X</p>
+      <p><b>Contact:</b> 9001001001</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://cdn1.iconfinder.com/data/icons/workshop-training-and-development/500/12-512.png" alt="Logo">
+      <p><strong>Empowerment Through Coding</strong></p>
+      <p><b>Date:</b> April 23, 2025</p>
+      <p><b>Time:</b> 10 AM - 2 PM</p>
+      <p><b>Location:</b> Tech Hub, City A</p>
+      <p><b>Contact:</b> 9002002002</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://cdn1.iconfinder.com/data/icons/workshop-training-and-development/500/12-512.png" alt="Logo">
+      <p><strong>Women IT Training</strong></p>
+      <p><b>Date:</b> April 24, 2025</p>
+      <p><b>Time:</b> 11 AM - 5 PM</p>
+      <p><b>Location:</b> District Center, City B</p>
+      <p><b>Contact:</b> 9003003003</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://cdn1.iconfinder.com/data/icons/workshop-training-and-development/500/12-512.png" alt="Logo">
+      <p><strong>E-Learning Skills Fair</strong></p>
+      <p><b>Date:</b> April 25, 2025</p>
+      <p><b>Time:</b> 1 PM - 4 PM</p>
+      <p><b>Location:</b> Gram Sabha Hall</p>
+      <p><b>Contact:</b> 9004004004</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://cdn1.iconfinder.com/data/icons/workshop-training-and-development/500/12-512.png" alt="Logo">
+      <p><strong>Job Readiness Bootcamp</strong></p>
+      <p><b>Date:</b> April 26, 2025</p>
+      <p><b>Time:</b> 10 AM - 1 PM</p>
+      <p><b>Location:</b> Rural Employment Center</p>
+      <p><b>Contact:</b> 9005005005</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://cdn1.iconfinder.com/data/icons/workshop-training-and-development/500/12-512.png" alt="Logo">
+      <p><strong>Learn & Lead</strong></p>
+      <p><b>Date:</b> April 27, 2025</p>
+      <p><b>Time:</b> 2 PM - 6 PM</p>
+      <p><b>Location:</b> Women's Resource Center</p>
+      <p><b>Contact:</b> 9006006006</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://cdn1.iconfinder.com/data/icons/workshop-training-and-development/500/12-512.png" alt="Logo">
+      <p><strong>Mobile Learning Lab</strong></p>
+      <p><b>Date:</b> April 28, 2025</p>
+      <p><b>Time:</b> 10 AM - 2 PM</p>
+      <p><b>Location:</b> Van Center, Village Y</p>
+      <p><b>Contact:</b> 9007007007</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="" alt="Logo">
+      <p><strong>Women Digital Literacy Drive</strong></p>
+      <p><b>Date:</b> April 29, 2025</p>
+      <p><b>Time:</b> 11 AM - 4 PM</p>
+      <p><b>Location:</b> Block Office, Zone C</p>
+      <p><b>Contact:</b> 9008008008</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+  </div>
+</div>
+
+<!-- Online Events -->
+<div class="section" id="online">
+    <h2 style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+  Online Events</h2>
+  <div class="event-boxes">
+    <!-- 8 Online Events -->
+    <div class="event">
+      <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+      <p><strong>Intro to Digital Literacy</strong></p>
+      <p><b>Date:</b> April 22, 2025</p>
+      <p><b>Time:</b> 3 PM - 5 PM</p>
+      <p><b>Platform:</b> Zoom</p>
+      <p><b>Contact:</b> 9111111111</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+      <p><strong>Women in Tech</strong></p>
+      <p><b>Date:</b> April 23, 2025</p>
+      <p><b>Time:</b> 2 PM - 4 PM</p>
+      <p><b>Platform:</b> Google Meet</p>
+      <p><b>Contact:</b> 9112222222</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+      <p><strong>Online Freelancing Guide</strong></p>
+      <p><b>Date:</b> April 24, 2025</p>
+      <p><b>Time:</b> 5 PM - 6:30 PM</p>
+      <p><b>Platform:</b> MS Teams</p>
+      <p><b>Contact:</b> 9113333333</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+      <p><strong>Basics of Coding</strong></p>
+      <p><b>Date:</b> April 25, 2025</p>
+      <p><b>Time:</b> 6 PM - 8 PM</p>
+      <p><b>Platform:</b> Webex</p>
+      <p><b>Contact:</b> 9114444444</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+      <p><strong>Entrepreneurship for Women</strong></p>
+      <p><b>Date:</b> April 26, 2025</p>
+      <p><b>Time:</b> 10 AM - 12 PM</p>
+      <p><b>Platform:</b> Zoom</p>
+      <p><b>Contact:</b> 9115555555</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+      <p><strong>E-Commerce Training</strong></p>
+      <p><b>Date:</b> April 27, 2025</p>
+      <p><b>Time:</b> 1 PM - 3 PM</p>
+      <p><b>Platform:</b> Google Meet</p>
+      <p><b>Contact:</b> 9116666666</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+      <p><strong>Blogging for Beginners</strong></p>
+      <p><b>Date:</b> April 28, 2025</p>
+      <p><b>Time:</b> 3 PM - 5 PM</p>
+      <p><b>Platform:</b> Zoom</p>
+      <p><b>Contact:</b> 9117777777</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+
+    <div class="event">
+      <img class="logo" src="https://onlinevents.co.uk/wp-content/uploads/2024/01/online-event-logo-366x300.png" alt="Logo">
+      <p><strong>Resume & Interview Skills</strong></p>
+      <p><b>Date:</b> April 29, 2025</p>
+      <p><b>Time:</b> 4 PM - 6 PM</p>
+      <p><b>Platform:</b> MS Teams</p>
+      <p><b>Contact:</b> 9118888888</p>
+      <button class="btn" onclick="openForm()">Register</button>
+    </div>
+  </div>
+</div>
+
+<!-- Form and Overlay -->
+<div class="overlay" id="overlay" onclick="closeForm()"></div>
+<div class="popup-form" id="form">
+  <h3>Register for Event</h3>
+  <form>
+    <input type="text" placeholder="Name" required><br>
+    <input type="email" placeholder="Email" required><br>
+    <textarea placeholder="Address" required></textarea><br>
+    <select onchange="openGPay(this)">
+      <option value="">Select Payment Method</option>
+      <option value="gpay">Google Pay</option>
+    </select><br>
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn" style="background: gray;" onclick="closeForm()">Cancel</button>
+  </form>
+</div>
+
+<script src="event.js"></script>
+<footer class="footer">
+  <div class="footer-content">
+
+    <!-- Left: Logo -->
+    <div class="footer-section">
+      <div class="footer-logo">🌸 Rural Girl Empowerment</div>
+    </div>
+
+    <!-- Center: Contact Info -->
+    <div class="footer-section footer-center">
+      <p>📞 Contact: +91 9876543210</p>
+      <p>✉️ Email: info@ruralgirl.org</p>
+      <p>📍 Address: Village Tech Lane, Rural India</p>
+    </div>
+
+    <!-- Right: Social Media -->
+    <div class="footer-section footer-social">
+      <div class="footer-social-item">
+        <i class="fab fa-instagram" style="color:#E1306C;"></i>
+        <span>Instagram</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-facebook-f" style="color:#1877F2;"></i>
+        <span>Facebook</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-linkedin-in" style="color:#0077B5;"></i>
+        <span>LinkedIn</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+        <span>Twitter</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>  

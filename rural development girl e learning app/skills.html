@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Learning Resources</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body class="bg-gradient-to-b from-orange-50 to-white text-gray-900 font-sans">
+
+  <!-- Font Awesome for caret icons (add this in <head> if not already) -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+ 
+ <!-- Navbar -->
+ <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between p-6">
+   <div class="text-2xl font-bold text-orange-600">AdhyaySKILL</div>
+ 
+   <ul class="flex space-x-6 text-gray-700 items-center">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="entrypre.html">MicroEntrepreneurs</a></li>
+     <li><a href="mentor1.html">Mentors</a></li>
+     <li><a href="event.html">Events</a></li>
+     <li><a href="intership.html">Opportunities</a></li>
+ 
+     <!-- Rewards Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('rewardsDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>Rewards</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="rewardsDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+         <li><a href="reward.html" class="block px-4 py-2 hover:bg-gray-100">Our Rewards</a></li>
+         <li><a href="shemes.html" class="block px-4 py-2 hover:bg-gray-100">Government Scheme</a></li>
+       </ul>
+     </li>
+ 
+     <!-- SkillLearning Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('skillDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>SkillLearning</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="skillDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+         <li><a href="skills.html" class="block px-4 py-2 hover:bg-gray-100">Courses</a></li>
+         <li><a href="freeVideos.html" class="block px-4 py-2 hover:bg-gray-100">Free Videos</a></li>
+       </ul>
+     </li>
+ 
+     <!-- Analize Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('analizeDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>Analize</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="analizeDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-48 rounded">
+         <li><a href="form.html" class="block px-4 py-2 hover:bg-gray-100">Showcase Skills</a></li>
+         <li><a href="records.HTML" class="block px-4 py-2 hover:bg-gray-100">Records Display</a></li>
+       </ul>
+     </li>
+   </ul>
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({
+       pageLanguage: 'en',
+       includedLanguages: 'en,fr,de,es,zh,hi', // English added here
+       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+       autoDisplay: false
+     }, 'google_translate_element');
+   }
+ </script>
+ <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+   <div class="flex items-center space-x-4">
+ 
+     <!-- Google Translate Dropdown -->
+   <div id="google_translate_element"></div>
+ 
+     <!-- Language Toggle Capsule 
+     <div class="flex rounded-full overflow-hidden border border-gray-300">
+       <button id="hindi-btn" class="bg-gray-200 text-gray-800 px-4 py-1 text-sm font-medium">Hindi</button>
+       <button id="english-btn" class="bg-white text-gray-800 px-4 py-1 text-sm font-medium">English</button>
+     </div>
+      Join Us Button -->
+     <button class="bg-black text-white px-4 py-2 rounded-full"><a href="file:///D:/gyan/rural%20development%20girl%20e%20learning%20app/signup.html">Join Us</a></button>
+   </div>
+ </nav>
+
+    <section class="search-bar">
+      <h3>🔍 Search Jobs & Internships</h3>
+      <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Search jobs, internships...">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    <section>
+        <h3>🧠 AI Inspired Skill Learning</h3>
+        <div class="card-box">
+          <div class="card">
+            <h4>Data Science Essentials</h4>
+            <p>Master data analysis, visualization, and ML concepts from scratch.</p>
+            <a href="https://www.datacamp.com/" target="_blank">Explore DataCamp</a>
+          </div>
+          <div class="card">
+            <h4>Python for AI</h4>
+            <p>Start coding AI applications using Python, Numpy, Pandas & TensorFlow.</p>
+            <a href="https://www.learnpython.org/" target="_blank">Learn Python</a>
+          </div>
+      
+          <div class="card">
+            <h4>AI Crash Course</h4>
+            <p>Google's quick and easy intro to AI, ML, and neural networks.</p>
+            <a href="https://developers.google.com/machine-learning/crash-course" target="_blank">Start Now</a>
+          </div>
+      
+          <div class="card">
+            <h4>AI Career Paths</h4>
+            <p>Discover AI career opportunities and women-centric internship programs.</p>
+            <a href="https://jobsforher.com/" target="_blank">View Jobs</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>📚 Free Learning Resources</h3>
+        <div class="card-box">
+      
+          <div class="card">
+            <img src="Coursera.jpg" alt="Coursera" width="130" height="38px" style="border-radius: 20px;">
+            <h4>Coursera</h4>
+            <p>World-class online courses from top universities and companies. Learn everything from AI to entrepreneurship for free or with certification.</p>
+            <a href="https://www.coursera.org/" target="_blank">Visit Coursera</a>
+          </div>
+      
+          <div class="card">
+            <img src="e.png" alt="edX" width="50" style="border-radius: 0px;">
+            <h4>edX</h4>
+            <p>Trusted by Harvard and MIT, edX offers professional and academic courses in AI, business, and more — free with verified certificates available.</p>
+            <a href="https://www.edx.org/" target="_blank">Visit edX</a>
+          </div>
+      
+          <div class="card">
+            <img src="khan.jpg" alt="Khan Academy" width="90">
+            <h4>Khan Academy</h4>
+            <p>A non-profit platform for students, teachers, and learners worldwide. 100% free courses in math, coding, economics, and personal development.</p>
+            <a href="https://www.khanacademy.org/" target="_blank">Visit Khan Academy</a>
+          </div>
+      
+          <div class="card">
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy Free Courses" width="86">
+            <h4>Udemy Free Courses</h4>
+            <p>Massive library of beginner to expert courses in coding, business, AI, and more — with a wide range of free options available.</p>
+            <a href="https://www.udemy.com/courses/free/" target="_blank">Visit Udemy Free</a>
+          </div>
+      
+          <div class="card">
+            <img src="futurel.png" alt="FutureLearn" width="120" height="70px">
+            <h4>FutureLearn</h4>
+            <p>Interactive, expert-led courses from universities like Cambridge & top global firms. Topics from AI to career development for women.</p>
+            <a href="https://www.futurelearn.com/" target="_blank">Visit FutureLearn</a>
+          </div>
+      
+          <div class="card">
+            <img src="solo l.jpg" alt="SoloLearn" width="150">
+            <h4>SoloLearn</h4>
+            <p>Learn coding on-the-go with the largest mobile code-learning community. Free tutorials in Python, AI, web, Java, and more.</p>
+            <a href="https://www.sololearn.com/" target="_blank">Visit SoloLearn</a>
+          </div>
+      
+          <div class="card">
+            <img src="mit.png" alt="MIT OpenCourseWare" width="120" height="30px">
+            <h4>MIT OpenCourseWare</h4>
+            <p>Free access to real courses from MIT in AI, data science, and engineering. Study materials, assignments, and video lectures included.</p>
+            <a href="https://ocw.mit.edu/" target="_blank">Visit MIT OCW</a>
+          </div>
+      
+          <div class="card">
+            <img src="huniversity.jpg" alt="Harvard Online" width="50">
+            <h4>Harvard Online</h4>
+            <p>Free and paid online learning opportunities from Harvard. Explore AI, leadership, business analytics, and career-ready courses.</p>
+            <a href="https://online-learning.harvard.edu/catalog/free" target="_blank">Visit Harvard Online</a>
+          </div>
+      
+        </div>
+      </section>
+      
+      <section>
+        <h3>🤖 Learn Predictive AI</h3>
+      
+        <div class="card">
+          <h4>Deeplearning.ai</h4>
+          <p>Deeplearning.ai offers some of the most renowned AI courses globally, founded by AI pioneer Andrew Ng. Their programs cover neural networks, deep learning, and practical ML applications. Ideal for both beginners and experts, it focuses on real-world use cases in AI-powered systems. The platform also promotes AI for social good, AI careers, and future skills.</p>
+          <a href="https://www.deeplearning.ai/" target="_blank">Explore Deeplearning.ai</a>
+        </div>
+      
+        <div class="card">
+          <h4>Google ML Crash Course</h4>
+          <p>Google's ML Crash Course is a free, beginner-friendly program featuring interactive visualizations and real-world ML problems. It introduces core concepts like supervised learning, model training, validation, and AI ethics. Designed for rapid skill-building, it’s ideal for anyone aiming to kickstart AI projects or careers in machine learning and data science.</p>
+          <a href="https://developers.google.com/machine-learning/crash-course" target="_blank">Try Google ML Crash Course</a>
+        </div>
+      
+      </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Women Empowerment Hub</p>
+    
+<footer class="footer">
+  <div class="footer-content">
+
+    <!-- Left: Logo -->
+    <div class="footer-section">
+      <div class="footer-logo">🌸 Rural Girl Empowerment</div>
+    </div>
+
+    <!-- Center: Contact Info -->
+    <div class="footer-section footer-center">
+      <p>📞 Contact: +91 9876543210</p>
+      <p>✉️ Email: info@ruralgirl.org</p>
+      <p>📍 Address: Village Tech Lane, Rural India</p>
+    </div>
+
+    <!-- Right: Social Media -->
+    <div class="footer-section footer-social">
+      <div class="footer-social-item">
+        <i class="fab fa-instagram" style="color:#E1306C;"></i>
+        <span>Instagram</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-facebook-f" style="color:#1877F2;"></i>
+        <span>Facebook</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-linkedin-in" style="color:#0077B5;"></i>
+        <span>LinkedIn</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+        <span>Twitter</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    
+  </footer>
+
+  <script>
+    function toggleDropdown(id) {
+  const dropdown = document.getElementById(id);
+  dropdown.classList.toggle('hidden');
+
+  // Close other dropdown if it's open
+  ['skillDropdown', 'analizeDropdown'].forEach(otherId => {
+    if (otherId !== id) {
+      document.getElementById(otherId).classList.add('hidden');
+    }
+  });
+}
+
+// Optional: Close dropdowns if clicked outside
+document.addEventListener('click', function (e) {
+  const skillBtn = e.target.closest('button[onclick*="skillDropdown"]');
+  const analizeBtn = e.target.closest('button[onclick*="analizeDropdown"]');
+  const clickedDropdown = e.target.closest('ul');
+
+  if (!skillBtn && !analizeBtn && !clickedDropdown) {
+    document.getElementById('skillDropdown').classList.add('hidden');
+    document.getElementById('analizeDropdown').classList.add('hidden');
+  }
+});
+  </script>
+</body>
+</html>

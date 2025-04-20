@@ -453,4 +453,33 @@
           align-items: center;
         }
       }
-  
+      /* Google Translate Style Fixes */
+    #google_translate_element {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 120px;
+      z-index: 9999;
+      background-color: white;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .goog-logo-link,
+    .goog-te-gadget span {
+      display: none !important;
+    }
+
+    .goog-te-gadget {
+      font-size: 0 !important;
+    }
+
+    .goog-te-combo {
+      width: 180px;
+      padding: 6px 8px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }

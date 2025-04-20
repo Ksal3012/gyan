@@ -41,12 +41,12 @@
     }
     
     .use-case-box {
-      background-color: #619c08;
-      color: white;
+      background-color: #fadfd9;
+      color: rgb(9, 9, 9);
       padding: 20px;
       border-radius: 16px;
       width: 300px;
-      height: 450px;
+      height: 500px;
       text-align: center;
       cursor: pointer;
       transition: transform 0.3s ease;
@@ -56,6 +56,11 @@
       transform: scale(1.03);
     }
     
+    .use-case-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .use-case-image img {
       width: 100px;
       height: 100px;

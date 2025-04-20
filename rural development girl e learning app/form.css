@@ -1,0 +1,138 @@
+body {
+    height: 100vh;
+    background: url('https://www.forbesindia.com/fbimages/900x600/proportional/jpeg/blog/wp-content/uploads/2021/11/Empowering-rural-women-may-be-the-key-to-a-poverty-free-Bharat.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    opacity: 0.9;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .profile-pic-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+    position: relative;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ccc;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    border: 4px solid #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .options {
+    display: none;
+    position: absolute;
+    top: 130px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .options button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .file-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .file-buttons label {
+    flex: 1;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .file-buttons label:hover {
+    background-color: #0056b3;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-btn:hover {
+    background-color: #218838;
+  }

@@ -3,46 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <title>Micro Entrepreneurship</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stylee.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
-<body>
-    <header class="header">
-        <div class="header-top">
-          <div class="gov-logo">
-            <img src="https://pngfre.com/wp-content/uploads/20240123_231426.png" class="flag" alt="India Flag">
-            <span class="gov-text">Government of India</span>
-          </div>
-          <div class="lang-buttons">
-            <button onclick="setLanguage('en')" class="eng">English</button>
-            <button onclick="setLanguage('hi')" class="hin">हिन्दी</button>
-          </div>
-        </div>
-      
-        <div class="header-bottom">
-          <div class="logo">
-            <div class="logo-icon">A</div>
-            <span>Adhya</span>
-          </div>
-          <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Mentor</a>
-            <a href="#">Skill Learning</a>
-            <a href="#">Encourage the Skill</a>
-            <a href="#">Micro Entrepreneurship</a>
-            <a href="#">Login</a>
-            <div class="contact-container">
-              <i class="fas fa-phone" style="color: #444;"></i>
-              <div class="tooltip-box">
-                <p><strong>📞 Phone:</strong> ‪+91 9876543210‬</p>
-                <p><strong>✉ Email:</strong> support@adhya.org</p>
-                <p><strong>📍 Address:</strong> Village Tech Park, Rural India</p>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+<body class="bg-gradient-to-b from-orange-50 to-white text-gray-900 font-sans">
+
+  <!-- Font Awesome for caret icons (add this in <head> if not already) -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+ 
+ <!-- Navbar -->
+ <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between p-6">
+   <div class="text-2xl font-bold text-orange-600">AdhyaySKILL</div>
+ 
+   <ul class="flex space-x-6 text-gray-700 items-center">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="entrypre.html">MicroEntrepreneurs</a></li>
+     <li><a href="mentor1.html">Mentors</a></li>
+     <li><a href="event.html">Events</a></li>
+     <li><a href="intership.html">Opportunities</a></li>
+ 
+     <!-- Rewards Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('rewardsDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>Rewards</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="rewardsDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+         <li><a href="reward.html" class="block px-4 py-2 hover:bg-gray-100">Our Rewards</a></li>
+         <li><a href="shemes.html" class="block px-4 py-2 hover:bg-gray-100">Government Scheme</a></li>
+       </ul>
+     </li>
+ 
+     <!-- SkillLearning Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('skillDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>SkillLearning</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="skillDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+         <li><a href="skills.html" class="block px-4 py-2 hover:bg-gray-100">Courses</a></li>
+         <li><a href="freeVideos.html" class="block px-4 py-2 hover:bg-gray-100">Free Videos</a></li>
+       </ul>
+     </li>
+ 
+     <!-- Analize Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('analizeDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>Analize</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="analizeDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-48 rounded">
+         <li><a href="form.html" class="block px-4 py-2 hover:bg-gray-100">Showcase Skills</a></li>
+         <li><a href="records.HTML" class="block px-4 py-2 hover:bg-gray-100">Records Display</a></li>
+       </ul>
+     </li>
+   </ul>
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({
+       pageLanguage: 'en',
+       includedLanguages: 'en,fr,de,es,zh,hi', // English added here
+       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+       autoDisplay: false
+     }, 'google_translate_element');
+   }
+ </script>
+ <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+   <div class="flex items-center space-x-4">
+ 
+     <!-- Google Translate Dropdown -->
+   <div id="google_translate_element"></div>
+ 
+     <!-- Language Toggle Capsule 
+     <div class="flex rounded-full overflow-hidden border border-gray-300">
+       <button id="hindi-btn" class="bg-gray-200 text-gray-800 px-4 py-1 text-sm font-medium">Hindi</button>
+       <button id="english-btn" class="bg-white text-gray-800 px-4 py-1 text-sm font-medium">English</button>
+     </div>
+      Join Us Button -->
+     <button class="bg-black text-white px-4 py-2 rounded-full"><a href="file:///D:/gyan/rural%20development%20girl%20e%20learning%20app/signup.html">Join Us</a></button>
+   </div>
+ </nav>
+ 
 
   <div class="floating-heading" id="floatingHeading">Current Micro Entrepreneurs Information</div>
   <div class="use-case-container">
@@ -278,6 +324,44 @@ Her enterprise grew quickly; from producing 17 quintals of vermi-compost and ear
     </div>
   </div>
 
+  <footer class="footer">
+    <div class="footer-content">
+  
+      <!-- Left: Logo -->
+      <div class="footer-section">
+        <div class="footer-logo">🌸 Rural Girl Empowerment</div>
+      </div>
+  
+      <!-- Center: Contact Info -->
+      <div class="footer-section footer-center">
+        <p>📞 Contact: +91 9876543210</p>
+        <p>✉️ Email: info@ruralgirl.org</p>
+        <p>📍 Address: Village Tech Lane, Rural India</p>
+      </div>
+  
+      <!-- Right: Social Media -->
+      <div class="footer-section footer-social">
+        <div class="footer-social-item">
+          <i class="fab fa-instagram" style="color:#E1306C;"></i>
+          <span>Instagram</span>
+        </div>
+        <div class="footer-social-item">
+          <i class="fab fa-facebook-f" style="color:#1877F2;"></i>
+          <span>Facebook</span>
+        </div>
+        <div class="footer-social-item">
+          <i class="fab fa-linkedin-in" style="color:#0077B5;"></i>
+          <span>LinkedIn</span>
+        </div>
+        <div class="footer-social-item">
+          <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+          <span>Twitter</span>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+  
 <script>
 
 const heading = document.getElementById('floatingHeading');
@@ -306,6 +390,30 @@ heading.innerHTML = '';
 // Set default language
 setLanguage("en");
 
+
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(id);
+  dropdown.classList.toggle('hidden');
+
+  // Close other dropdown if it's open
+  ['skillDropdown', 'analizeDropdown'].forEach(otherId => {
+    if (otherId !== id) {
+      document.getElementById(otherId).classList.add('hidden');
+    }
+  });
+}
+
+// Optional: Close dropdowns if clicked outside
+document.addEventListener('click', function (e) {
+  const skillBtn = e.target.closest('button[onclick*="skillDropdown"]');
+  const analizeBtn = e.target.closest('button[onclick*="analizeDropdown"]');
+  const clickedDropdown = e.target.closest('ul');
+
+  if (!skillBtn && !analizeBtn && !clickedDropdown) {
+    document.getElementById('skillDropdown').classList.add('hidden');
+    document.getElementById('analizeDropdown').classList.add('hidden');
+  }
+});
   </script>
 
 </body>

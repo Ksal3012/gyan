@@ -3,34 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevSkill - eLearning Platform</title>
+  <title>Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="stylee.css">
 </head>
-<body class="bg-gradient-to-b from-orange-50 to-white text-gray-900 font-sans">
+  <body class="bg-gradient-to-b from-orange-50 to-white text-gray-900 font-sans">
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between p-6">
-    <div class="text-2xl font-bold text-orange-600">AdhyaySKILL</div>
-    <ul class="flex space-x-6 text-gray-700">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">SkillLearning</a></li>
-      <li><a href="#">MicroEntrepreneurs</a></li>
-      <li><a href="#">Mentors</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Forms</a></li>
-      <li><a href="#">Rewards</a></li>
-    </ul>
-    <div class="flex items-center space-x-4">
-      <!-- Language Toggle Capsule -->
-      <div class="flex rounded-full overflow-hidden border border-gray-300">
-        <button id="hindi-btn" class="bg-gray-200 text-gray-800 px-4 py-1 text-sm font-medium">Hindi</button>
-        <button id="english-btn" class="bg-white text-gray-800 px-4 py-1 text-sm font-medium">English</button>
-      </div>
-      <!-- Join Us Button -->
-      <button class="bg-black text-white px-4 py-2 rounded-full">Join Us</button>
+ <!-- Font Awesome for caret icons (add this in <head> if not already) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between p-6">
+  <div class="text-2xl font-bold text-orange-600">AdhyaySKILL</div>
+
+  <ul class="flex space-x-6 text-gray-700 items-center">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="entrypre.html">MicroEntrepreneurs</a></li>
+    <li><a href="mentor1.html">Mentors</a></li>
+    <li><a href="event.html">Events</a></li>
+    <li><a href="intership.html">Opportunities</a></li>
+
+    <!-- Rewards Dropdown -->
+    <li class="relative">
+      <button onclick="toggleDropdown('rewardsDropdown')" class="flex items-center space-x-1 focus:outline-none">
+        <span>Rewards</span>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <ul id="rewardsDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+        <li><a href="reward.html" class="block px-4 py-2 hover:bg-gray-100">Our Rewards</a></li>
+        <li><a href="shemes.html" class="block px-4 py-2 hover:bg-gray-100">Government Scheme</a></li>
+      </ul>
+    </li>
+
+    <!-- SkillLearning Dropdown -->
+    <li class="relative">
+      <button onclick="toggleDropdown('skillDropdown')" class="flex items-center space-x-1 focus:outline-none">
+        <span>SkillLearning</span>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <ul id="skillDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+        <li><a href="skills.html" class="block px-4 py-2 hover:bg-gray-100">Courses</a></li>
+        <li><a href="freeVideos.html" class="block px-4 py-2 hover:bg-gray-100">Free Videos</a></li>
+      </ul>
+    </li>
+
+    <!-- Analize Dropdown -->
+    <li class="relative">
+      <button onclick="toggleDropdown('analizeDropdown')" class="flex items-center space-x-1 focus:outline-none">
+        <span>Analize</span>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <ul id="analizeDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-48 rounded">
+        <li><a href="form.html" class="block px-4 py-2 hover:bg-gray-100">Showcase Skills</a></li>
+        <li><a href="records.HTML" class="block px-4 py-2 hover:bg-gray-100">Records Display</a></li>
+      </ul>
+    </li>
+  </ul>
+ <!-- Google Translate Script -->
+ <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,fr,de,es,zh,hi', // English added here
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <div class="flex items-center space-x-4">
+
+    <!-- Google Translate Dropdown -->
+  <div id="google_translate_element"></div>
+
+    <!-- Language Toggle Capsule 
+    <div class="flex rounded-full overflow-hidden border border-gray-300">
+      <button id="hindi-btn" class="bg-gray-200 text-gray-800 px-4 py-1 text-sm font-medium">Hindi</button>
+      <button id="english-btn" class="bg-white text-gray-800 px-4 py-1 text-sm font-medium">English</button>
     </div>
-  </nav>
+     Join Us Button -->
+    <button class="bg-black text-white px-4 py-2 rounded-full"><a href="file:///D:/gyan/rural%20development%20girl%20e%20learning%20app/signup.html">Join Us</a></button>
+  </div>
+</nav>
 
 
   <!-- Hero Section --><br><br>
@@ -43,7 +98,7 @@
       </h1>
       <p class="text-gray-600 mt-4">"Share smart ideas in a unique way, without needing a big company, by combining both online and offline strategies."</p>
       <div class="flex space-x-4 mt-6">
-        <button class="bg-teal-500 text-white px-6 py-2 rounded-full">Start Learning</button>
+        <button class="bg-teal-500 text-white px-6 py-2 rounded-full"><a href="file:///D:/gyan/rural%20development%20girl%20e%20learning%20app/freeVideos.html">Start Learning</a></button>
       </div>
     </div>
     <div class="mt-10 lg:mt-0">
@@ -257,7 +312,33 @@
 
   </div>
 </footer>
+<!-- Google Translate Script -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,hi',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
 
+  function toggleDropdown(id) {
+    document.querySelectorAll('ul[id$="Dropdown"]').forEach(el => {
+      if (el.id !== id) el.classList.add('hidden');
+    });
+    const dropdown = document.getElementById(id);
+    dropdown.classList.toggle('hidden');
+  }
+
+  function scrollSlider(direction) {
+    const slider = document.getElementById('mainSlider');
+    const amount = 300;
+    if (direction === 'left') slider.scrollLeft -= amount;
+    else slider.scrollLeft += amount;
+  }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="home.js"></script>
 </body>
 </html>

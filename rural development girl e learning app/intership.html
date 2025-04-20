@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Opportunities</title>
+  <link rel="stylesheet" href="intership.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-orange-50 to-white text-gray-900 font-sans">
+
+  <!-- Font Awesome for caret icons (add this in <head> if not already) -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+ 
+ <!-- Navbar -->
+ <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between p-6">
+   <div class="text-2xl font-bold text-orange-600">AdhyaySKILL</div>
+ 
+   <ul class="flex space-x-6 text-gray-700 items-center">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="entrypre.html">MicroEntrepreneurs</a></li>
+     <li><a href="mentor1.html">Mentors</a></li>
+     <li><a href="event.html">Events</a></li>
+     <li><a href="intership.html">Opportunities</a></li>
+ 
+     <!-- Rewards Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('rewardsDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>Rewards</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="rewardsDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+         <li><a href="reward.html" class="block px-4 py-2 hover:bg-gray-100">Our Rewards</a></li>
+         <li><a href="shemes.html" class="block px-4 py-2 hover:bg-gray-100">Government Scheme</a></li>
+       </ul>
+     </li>
+ 
+     <!-- SkillLearning Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('skillDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>SkillLearning</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="skillDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-40 rounded">
+         <li><a href="skills.html" class="block px-4 py-2 hover:bg-gray-100">Courses</a></li>
+         <li><a href="freeVideos.html" class="block px-4 py-2 hover:bg-gray-100">Free Videos</a></li>
+       </ul>
+     </li>
+ 
+     <!-- Analize Dropdown -->
+     <li class="relative">
+       <button onclick="toggleDropdown('analizeDropdown')" class="flex items-center space-x-1 focus:outline-none">
+         <span>Analize</span>
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <ul id="analizeDropdown" class="hidden absolute bg-white shadow-md mt-2 py-2 w-48 rounded">
+         <li><a href="form.html" class="block px-4 py-2 hover:bg-gray-100">Showcase Skills</a></li>
+         <li><a href="records.HTML" class="block px-4 py-2 hover:bg-gray-100">Records Display</a></li>
+       </ul>
+     </li>
+   </ul>
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({
+       pageLanguage: 'en',
+       includedLanguages: 'en,fr,de,es,zh,hi', // English added here
+       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+       autoDisplay: false
+     }, 'google_translate_element');
+   }
+ </script>
+ <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+   <div class="flex items-center space-x-4">
+ 
+     <!-- Google Translate Dropdown -->
+   <div id="google_translate_element"></div>
+ 
+     <!-- Language Toggle Capsule 
+     <div class="flex rounded-full overflow-hidden border border-gray-300">
+       <button id="hindi-btn" class="bg-gray-200 text-gray-800 px-4 py-1 text-sm font-medium">Hindi</button>
+       <button id="english-btn" class="bg-white text-gray-800 px-4 py-1 text-sm font-medium">English</button>
+     </div>
+      Join Us Button -->
+     <button class="bg-black text-white px-4 py-2 rounded-full"><a href="file:///D:/gyan/rural%20development%20girl%20e%20learning%20app/signup.html">Join Us</a></button>
+   </div>
+ </nav>
+     <br><br>    <br><br>
+<!-- Floating Math Symbols -->
+<div class="math-shape">+</div>
+<div class="math-shape">−</div>
+<div class="math-shape">×</div>
+<div class="math-shape">÷</div>
+<div class="math-shape">+</div>
+<h1 style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+<img src="https://img.icons8.com/clouds/100/work.png" alt="Job Logo" 
+style="width:60px; vertical-align: middle; margin-bottom: -10px;">
+Job Opportunities</h1>
+<br>    <br><br>
+<div class="outer-box" id="internshipContainer"></div>
+
+<!-- NGO Section -->
+<section class="scroll-section">
+    <h1 style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <img src="https://img.icons8.com/clouds/100/handshake.png" alt="NGO Logo" style="width:80px;">
+      Our NGO Partners</h1>
+  <button class="scroll-btn scroll-left" onclick="scrollNGOs(-300)">&#8592;</button>
+  <div class="scroll-wrapper" id="ngoScroll">
+    <div class="ngo-card"><img src="https://img.icons8.com/clouds/100/company.png"/><h4>RuralLight</h4><p>Helping girls achieve education goals.</p><a href="#">Visit Site</a></div>
+    <div class="ngo-card"><img src="https://img.icons8.com/clouds/100/light-on.png"/><h4>BrightSteps</h4><p>Step-by-step mentorship for village girls.</p><a href="#">Visit Site</a></div>
+    <div class="ngo-card"><img src="https://static.vecteezy.com/system/resources/previews/020/293/055/non_2x/empower-typography-logo-empower-lettering-free-vector.jpg"/><h4>EmpowerHer</h4><p>Empowering women in local businesses.</p><a href="#">Visit Site</a></div>
+    <div class="ngo-card"><img src="https://img.icons8.com/clouds/100/data-configuration.png"/><h4>DigitalRoots</h4><p>IT skills for rural youth.</p><a href="#">Visit Site</a></div>
+    <div class="ngo-card"><img src="https://img.icons8.com/clouds/100/support.png"/><h4>SupportSakhi</h4><p>Career counseling & peer support.</p><a href="#">Visit Site</a></div>
+    <div class="ngo-card"><img src="https://img.icons8.com/clouds/100/work.png"/><h4>VillageWork</h4><p>Training in digital work-from-home.</p><a href="#">Visit Site</a></div>
+    <div class="ngo-card"><img src="https://img.icons8.com/clouds/100/brain.png"/><h4>SheThink</h4><p>Problem solving & innovation labs.</p><a href="#">Visit Site</a></div>
+    <div class="ngo-card"><img src="https://swanhans.in/home-assets/images/CA-MITRA-Logo-1.png"/><h4>CareMitra</h4><p>Healthcare and wellness workshops.</p><a href="#">Visit Site</a></div>
+  </div>
+  <button class="scroll-btn scroll-right" onclick="scrollNGOs(300)">&#8594;</button>
+</section>
+
+<script src="intership.js">
+ 
+</script>
+<footer class="footer">
+  <div class="footer-content">
+
+    <!-- Left: Logo -->
+    <div class="footer-section">
+      <div class="footer-logo">🌸 Rural Girl Empowerment</div>
+    </div>
+
+    <!-- Center: Contact Info -->
+    <div class="footer-section footer-center">
+      <p>📞 Contact: +91 9876543210</p>
+      <p>✉️ Email: info@ruralgirl.org</p>
+      <p>📍 Address: Village Tech Lane, Rural India</p>
+    </div>
+
+    <!-- Right: Social Media -->
+    <div class="footer-section footer-social">
+      <div class="footer-social-item">
+        <i class="fab fa-instagram" style="color:#E1306C;"></i>
+        <span>Instagram</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-facebook-f" style="color:#1877F2;"></i>
+        <span>Facebook</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-linkedin-in" style="color:#0077B5;"></i>
+        <span>LinkedIn</span>
+      </div>
+      <div class="footer-social-item">
+        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+        <span>Twitter</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
